@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+.front{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.display{
+    width: 80px;
+    height: 30px;
+    background-color:rgb(36, 190, 190);
+   
+    border-radius: 3px;
+    margin-left: -350px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-family: 'Silkscreen';
+    font-weight: 600;
+    padding: 8px;
+}
+
+.elevator-container{
+    width: 370px;
+    height: 530px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 2px solid black;
+    background-color: rgb(44, 45, 45);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 1px solid rgb(191, 191, 191);
+   
+}
+
+.elevator {
+    width: 300px;
+    height: 490px;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    border: 3px solid rgb(84, 84, 84);
+    border-bottom: 0px;
+    transition-delay: 1s;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    
+    /* padding: 0px 2px; */
+    
+  }
+  
+  .door1,.door2{
+    width: 50%;
+    height: 490px;
+  
+    background-image: url("https://st.depositphotos.com/1004032/3294/i/600/depositphotos_32942243-stock-photo-metal-background-or-texture-of.jpg");
+    transition: transform 4s ease;
+  }
+
+  .elevator.open{
+    padding:  0px 5px;
+  }
+  
+  .elevator.open .door1 {
+
+    transform: translateX(-100%);
+  }
+
+  .elevator.open .door2 {
+    border-top: 5px;
+    right: 0;
+    transform: translateX(100%);
+  }
+  
+  .elevator.closed .door1 {
+    transform: translateX(0%);
+  }
+  .elevator.closed .door2 {
+    transform: translateX(0%);
+  }
+
+  .container{
+    display: flex;
+    align-items: center;
+  }
+  
+  .direction{
+    width: 80px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.411);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .up, .down{
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    margin: 10px 0;
+    border-radius: 50%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .up, .down:hover{
+    cursor: pointer;
+  }
+
+  .front{
+    margin-top: 100px;
+    width: 900px;
+  }
+
+  .front>hr{
+    width: 700px;
+    margin-top: 0;
+    margin-bottom: 0.5px;
+    border: 1.5px solid rgb(115, 115, 115);
+    border-radius: 5px;
+  }
+
+  
